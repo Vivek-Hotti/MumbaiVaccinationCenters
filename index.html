@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mumbai Covid Vaccination Centers</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<link rel="icon" href="https://hotemoji.com/images/dl/m/syringe-emoji-by-google.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+	$(document).ready(function(){
+   $("#myInput").on("keyup",function(){
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function(){
+   $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+
+    });
+
+   });
+
+	});
+
+	document.querySelector(".banner__close").addEventListener("click", function () {
+  		this.closest(".banner").style.display = "none";
+	});
+
+
+</script>
+
+</head>
+<body>
+	<a class="github-fork-ribbon" href="https://url.to-your.repo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+	<div class="banner">
+		<center>
+		<div class="banner__content">
+		  <div class="banner__text">
+			<h3><strong>Covid 19 Vaccination Centers Across Mumbai*</strong></h3>
+			<i>Search using hospital name (OR) city name (OR) locality name</i>
+		  </div>
+		</div>
+		</center>
+	  </div> <br />
+<center>
+	<!-- <img src="https://hotemoji.com/images/dl/m/syringe-emoji-by-google.png" height="50", width="50"> <br /> -->
+	<!-- <h1>COVID VACCINATION CENTERS</h1> -->
+
+</center>
+<center>
+<div class="main">
+	<center>
+	<h2> </h2><br></center>
+	<input id="myInput" type="text" placeholder="Search by Hospital Name or Your City or Your Locality . . ." class="form-control"><br><br>
+
+	<table class="table table-hover">
+		<thead class="thead-dark">
+			<tr>
+				<th>Hospital ID </th>
+				<th>Hospital Name</th>
+				<th>Hospital Type</th>
+				<th>City</th>
+				<th>Locality(ies)</th>
+				<th>Contact Details</th>
+			</tr>
+			<tbody id="myTable">
+				<tr>
+					<th>MUM_1</th>
+					<th>Apex Hospitals</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Dahisar, Kandivali, Govandi East, Mulund, Dombivli, Kalyan, Dadar, Malad West</th>
+					<th>Phone(Mulund): 9136665305 , Phone(Borivali): 9136665105, <a href="https://apexgroupofhospitals.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_2</th>
+					<th>Apex Multispeciality Hospitals</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Andheri East, Kopar Khairane, Mulund West, Borivali East, Borivali West, Mira Road, Mira Bhayandar</th>
+					<th>Phone: 022 2870 3377, <a href="https://apexgroupofhospitals.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_3</th>
+					<th>Ashtvinayak Hospital & Super Speciality Hospital</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Borivali East, New Panvel East</th>
+					<th>Phone: 8882905905, <a href="https://ashtvinayakhospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_4</th>
+					<th>Asian Institute of Medical Sciences</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Dombivli East</th>
+					<th>Phone: 7506274959, 0251 6185000 <a href="https://www.aimshospital.co.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_5</th>
+					<th>Balaji Hospital</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Byculla East</th>
+					<th>Phone: 0222374 0000, <a href="http://balajihospital.net/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_6</th>
+					<th>Dr. R.N.Patil's Suraj Hospital</th>
+					<th>Government</th>
+					<th>Navi Mumbai</th>
+					<th>Sanpada</th>
+					<th>Phone: 1800220705, <a href="http://surajhospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_7</th>
+					<th>Lifeline Multispeciality Hospital </th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Malad West, Dahisar West, Mira Road East, Mira Bhayandar</th>
+					<th>Phone: 08048126387, +91-22-2807 4040 / 4208 6000, +91-22-2888 5001 / 2888 5006 <a href="https://www.lifelinehospitalmumbai.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_8</th>
+					<th>M/s S. S. Vaidya Health Care Pvt. Ltd</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Kalbadevi</th>
+					<th>Phone: Not provided , Website: Not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_9</th>
+					<th>Mallika Hospital</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Jogeshwari West</th>
+					<th>Phone: +912226797171, Website: Not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_10</th>
+					<th>MPCT Hospital</th>
+					<th>Government</th>
+					<th>Navi Mumbai</th>
+					<th>Sanpada</th>
+					<th>Phone: +912227750000, <a href="https://mpcthospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_11</th>
+					<th>Niramaya Hospital</th>
+					<th>Government</th>
+					<th>Navi Mumbai</th>
+					<th>Kharghar</th>
+					<th>Phone: +912227747761, <a href="http://www.niramayahospitals.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_11</th>
+					<th>Panacea Hospital</th>
+					<th>Government</th>
+					<th>Navi Mumbai</th>
+					<th>New Panvel East</th>
+					<th>Phone: +91-8422-8422-00/ 11, <a href="http://panaceahospital.net/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_12</th>
+					<th>Pinnacle Ortho Centre </th>
+					<th>Government</th>
+					<th>Thane</th>
+					<th>Panch Pakhdi(Thane West)</th>
+					<th>Phone: +912225419000, <a href="https://pinnacleorthocentre.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_13</th>
+					<th>Prachin Healthcare Multi-speciality Hospital</th>
+					<th>Government</th>
+					<th>Navi Mumbai</th>
+					<th>Panvel</th>
+					<th>Phone: +912271333258, <a href="http://www.prachinhealthcare.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_14</th>
+					<th>Rane Hospital Pvt. Ltd</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Chembur</th>
+					<th>Phone: 022-25288404 - 06 , 25229638 , Website: Not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_15</th>
+					<th>Riddhi Vinayak, Critical Care & Cardiac Centrel</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Malad West</th>
+					<th>Phone: 022 2866 3985, <a href="http://www.rvcc.co.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_16</th>
+					<th>Riddhi Vinayak, Multi Speciality Hospital</th>
+					<th>Government</th>
+					<th>Mumbai Metropolitan Region</th>
+					<th>Nala Sopara</th>
+					<th>Phone: 092231 86550, <a href="http://www.rvcc.co.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_17</th>
+					<th>Sapana Health Care Centre</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Ghatkopar West</th>
+					<th>Phone: 9653676975, <a href="http://www.sapnahealthcare.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_18</th>
+					<th>Shantiniketan Hospital</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Ghatkopar West</th>
+					<th>Phone: +912225001005, <a href="http://drlokhandeshospital.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_19</th>
+					<th>Shivam Hospital</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Kandivali West</th>
+					<th>Phone: +919819749522, <a href="http://www.shivamhospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_20</th>
+					<th>Shivam Hospital, Multi Spciality & Joint Replacement Centrel</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Kandivali West</th>
+					<th>Phone: +919819749522, <a href="http://www.shivamhospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_21</th>
+					<th>Shree Balaji Hospital</th>
+					<th>Government</th>
+					<th>Mumbai Metropolitan Region</th>
+					<th>Virar East</th>
+					<th>Phone: 0250 252 1685, Website: Not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_22</th>
+					<th>Shushrusha Heart Care Center & Multi Speciality Hospital</th>
+					<th>Government</th>
+					<th>Navi Mumbai</th>
+					<th>Nerul West</th>
+					<th>Phone: +912227700273, <a href="http://www.shushrusha.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_23</th>
+					<th>Siddhivinayak Maternity & General Hospital</th>
+					<th>Government</th>
+					<th>Mumbai Metropolitan Region</th>
+					<th>Nala Sopara East</th>
+					<th>Phone: +919225724050, Website: Not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_24</th>
+					<th>SRCC Children's Hospital</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Mahalakshmi</th>
+					<th>Phone: 022-7122 2333, 186 0208 0208, <a href="https://www.narayanahealth.org/hospitals/mumbai/srcc-childrens-hospital?utm_source=srcc-childrens-hospital&utm_medium=GMB_Hospital&utm_campaign=Organic">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_25</th>
+					<th>Surana Hospital & Research Centre</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Malad West</th>
+					<th>Phone: +912228022123, <a href="http://www.mpcthospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_26</th>
+					<th>Surana Sethia Hospital Research Centre</th>
+					<th>Government</th>
+					<th>Mumbai</th>
+					<th>Chembur</th>
+					<th>Phone: +912233783378, <a href="http://www.suranahospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_27</th>
+					<th>Surekha Criticare Hospital</th>
+					<th>Government</th>
+					<th>Thane</th>
+					<th>Ulhasnagar</th>
+					<th>Phone: 0251 256 9191, <a href="http://www.mpcthospital.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_28</th>
+					<th>Swami Sarvanand Hospital</th>
+					<th>Government</th>
+					<th>Thane</th>
+					<th>Ulhasnagar</th>
+					<th>Phone: +912512527517, <a href="http://swamisarvanandhospital.org/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_29</th>
+					<th>Terna Multispeciality Hospital and Research Centre</th>
+					<th>Government</th>
+					<th>Navi Mumbai</th>
+					<th>Nerul West</th>
+					<th>Phone: 022 6157 8300, <a href="https://ternahospital.org/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_30</th>
+					<th>Highland Super Specialty Hospital</th>
+					<th>Government</th>
+					<th>Thane</th>
+					<th>Dhokali (Thane West)</th>
+					<th>Phone: 022 2584 0300, <a href="http://www.highlandhospital.co.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_31</th>
+					<th>The Muslim Ambulance Society</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Mandvi</th>
+					<th>Phone: +912223465642, <a href="http://www.themuslimambulancesociety.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_32</th>
+					<th>M.H. Saboo Siddique Maternity & General Hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Mandvi</th>
+					<th>Phone: +912223773355, <a href="http://themuslimambulancesociety.com/opd-m-h-saboo-siddique-maternity-general-hospital/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_33</th>
+					<th>Nana Palkar Smruti Samiti</th>
+					<th>Private</th>
+					<th>Mumbai, Thane</th>
+					<th>Borivali West, Thane West</th>
+					<th>Phone: 022 2898 3029, 022 2537 9634 <a href="https://www.npss.org/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_34</th>
+					<th>Bai Jerbai Wadia Hospital for Children</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Parel East</th>
+					<th>Phone: +91 - 22 - 24146965 <a href="http://www.wadiahospitals.org/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_35</th>
+					<th>Lalbaug Raja Dialysis Center</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Parel</th>
+					<th>Phone: +917058005211, Website: not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_36</th>
+					<th>Dalvi Nursing Home</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Chunabhatti</th>
+					<th>Phone: 022 2405 1116, <a href="https://dalvihealthcare.com/">Website</a></th>
+				</tr>
+
+				<tr>
+					<th>MUM_37</th>
+					<th>Lion Tarachand Bapa Hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Sion West</th>
+					<th>Phone: +912224044983, <a href="http://www.liontarachandbapahospital.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_38</th>
+					<th>K.J.Somaiya Hospital & Research Centre</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Sion East</th>
+					<th>Phone: +91 22 5095 4700, <a href="https://www.somaiya-ayurvihar.org/en">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_39</th>
+					<th>Rehbar foundation Malik Rakiya Khatoon dialysis centre, Shatabdi hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Kurla West</th>
+					<th>Phone: +912225036310, <a href="http://rehbarfoundation.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_40</th>
+					<th>Nana Palkar Smruti Samiti Santacruz Dialysis Centre</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Santacruz</th>
+					<th>Phone: +91 (022) 24102167, 24186724,24164890, <a href="https://www.npss.org/santacruz-centre/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_41</th>
+					<th>Lion Kartar singh Hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Gilbert Hill, Andheri West</th>
+					<th>Phone: 022 2670 7454, Website: not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_42</th>
+					<th>Brahma Kumaris GHRC managing BSES MG Hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Lihana Colony, Andheri West</th>
+					<th>Phone: 022 6648 7500, <a href="https://www.ghrc-abu.com/bses-mg-hospital/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_43</th>
+					<th>Lifeline Medicare Hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Goregaon East, Goregaon West, Kandivali East</th>
+					<th>Phone: 022-287-58100, 022-284-02506, 022-285-48101, <a href="https://lifelinemedicarehospitals.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_44</th>
+					<th>Millat Dialysis Center</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Andheri East</th>
+					<th>Phone: not provided, Website: not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_45</th>
+					<th>Venus Charitable Medical Centre Conducted By Venus Cultural Association</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Goregaon West</th>
+					<th>Phone: 022 2876 7709, <a href="http://www.venusindia.org/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_46</th>
+					<th>Prabodhan Charitable Dialysis Center</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Churi Wadi (Goregaon West)</th>
+					<th>Phone: not provided, Website: not provided</a></th>
+				</tr>
+				<tr>
+					<th>MUM_47</th>
+					<th>Kosmopolitan Charitable Dialysis and Day Care Center</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Malvani (Malad West)</th>
+					<th>Phone: +91-9892090491, +91-9833873789, +91-9869049040, +91-9022221992, <a href="http://jfbtrust.org/kosmopolitain.html">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_48</th>
+					<th>Shree Naminathji Jain Foundation (Borivali east)</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Borivali East</th>
+					<th>Phone: not provided, Website: not provided</a></th>
+				</tr>
+				<tr>
+					<th>MUM_49</th>
+					<th>Sushrut Hospital & Research Centre</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Chembur</th>
+					<th>Phone: 93727 45480, +91 (022) 25265555 / 25265500 / 25283302, <a href="https://sushruthospital.org/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_50</th>
+					<th>Parakh Hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Ghatkopar East</th>
+					<th>Phone: 022 6782 7000, <a href="https://parakhhospital.com/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_51</th>
+					<th>Dr Bhatia's Hospital</th>
+					<th>Private</th>
+					<th>Mumbai Suburban</th>
+					<th>Bhandup</th>
+					<th>Phone: not provided, Website: not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_52</th>
+					<th>Dr.Meenas Multispeciality Hospital , Bhandup</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Bhandup West</th>
+					<th>Phone: 08071 265 530, Website: not provided</th>
+				</tr>
+				<tr>
+					<th>MUM_53</th>
+					<th>Platinum Group of Hospitals</th>
+					<th>Private</th>
+					<th>Mumbai, Mumbai Metropolitan Region</th>
+					<th>Vasai, Mulund, Ulhasnagar, Kalwa</th>
+					<th>Phone: 0251- 2453623, 2444747, 2444433, 0250-2452626/2727/2828, 022-25600190/191/197, 022-261710700-799, <a href="https://platinumhospitals.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_54</th>
+					<th>H. J. Doshi Ghatkopar Hindu Sabha Hospital</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Ghatkopar West</th>
+					<th>Phone: 022 2509 4451 <a href="https://hjdghsh.in/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_55</th>
+					<th>Shivam Hospital (Dialysis Unit)</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Kandivali West</th>
+					<th>Phone: 098197 49522 , Website: not provided</a></th>
+				</tr>
+				<tr>
+					<th>MUM_56</th>
+					<th>HCG APEX cancer centre</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Borivali West</th>
+					<th>Phone: 022 6257 9999, <a href="https://hcg-apex-cancer-centre.business.site/">Website</a></th>
+				</tr>
+				<tr>
+					<th>MUM_57</th>
+					<th>Lancelot Dialysis Center</th>
+					<th>Private</th>
+					<th>Mumbai</th>
+					<th>Borivali West</th>
+					<th>Phone: 022 2806 6266 <a href="http://www.lancelotdialysisonit.com/">Website</a></th>
+				</tr>
+			</tbody>
+
+		</thead>
+		
+	</table>
+	
+</div>
+</center> <br />
+<footer>
+	<center>
+		<h3><strong>Created by: Vivek Shivakumar Hotti</strong></h3>
+		Link to the Github Repository: <a href="https://github.com/Vivek-Hotti/MumbaiVaccinationCenters">here</a>
+		
+		<h4>© 2021 Vivek Hotti. All rights reserved</h4>
+		<h4>Information Courtesy : <a href="https://www.timesnownews.com/india/maharashtra-news/article/covid-19-vaccination-in-maharashtra-complete-list-of-govt-and-private-hospitals-to-get-inoculated/726351">timesnownews.com</a></h4>
+		*Whilst the above information has been researched, details provided in the above webpage are for unofficial use. I do not take any responsibility whatsoever for entities and individuals referring to the above information for personal use. Entities and individiuals using the above information will be solely responsible for any and every negative consequence that occur. It is advisable for entities and individuals to recheck, confirm and crosscheck the information provided through the websites and phone numbers provided, before use.
+	</center>
+</footer>
+
+</body>
+</html>
